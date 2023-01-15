@@ -35,7 +35,7 @@ h3 {
     font-family: 'Nunito', sans-serif;
 }
 img {
-    width: 100%;
+    width: 50%;
 }
 ol,ul {
 	list-style: none;
@@ -92,6 +92,10 @@ footer {
     font-weight: 300;
     line-height: 1.5;
     color: #222;
+}
+.social {
+    height: 32px;
+    width: 32px;
 }
 .button {
     background-color: #3dd07b;
