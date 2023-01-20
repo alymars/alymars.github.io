@@ -37,32 +37,79 @@
             </div>
             <div>
                 <p>
-                    Designed with the needs and safety of sailors, surfers, diver, and watersport aficionados in mind, Voda is a responsive web application that provides an easy way to understand wind, wave, and weather forecasts, and
-                    safety reporting.
+                    Voda is a responsive web application designed to provide people who do water sports with an easy-to-understand and informative weather-checking system. This application was a solo project I completed between March and November 2022, with a minor UI update done in January 2023.
                 </p>
             </div>
             <div>
-                <ul>
-                    <li>Duration: March - November 2022</li>
-                    <li>Platform: Web</li>
-                    <li>Tools Used: Figma, UsabilityHub, Proto.io, ProtoPie, Optimal Workshop, Google Survey</li>
-                    <li>What I Did: Competitive analysis, User surveys, User interviews, Wireframing, Prototyping, Visual design, A/B testing, Usability testing</li>
-                </ul>
+                <h2>Defining the Problem</h2>
+                <p>
+                    To safely and efficiently enjoy your time on the water, it is best to check weather conditions beyond the temperature and precipitation chances. You want to know wave strength, wind speed, and algae content. Existing weather applications are not meeting the goal of making complex weather data accessible and easy to understand. Often you have to pay for more detailed weather reports, or the language is too technical for the average person to comprehend.
+                </p>
+            <br>
+                <p>
+                    Voda simplifies complex weather data so that you can check all the necessary information. All in 3 minutes or less.
+                </p>
             </div>
             <br />
             <div>
                 <h2>The Process</h2>
                 <p>
-                    To better understand what information is important when designing a weather application, I conducted a competitors analysis. I focused on applications with a similar target market, people who do water sport. The
-                    oppurtunities for improvement I found were providing activity recommendations, tracking algae blooms, and offering safety suggestions. Along with the analysis, I noted navigation menus and how data is displayed could be
-                    simplified.
+                    As a former figure skater from the Midwest, I knew next to nothing about what kind of information was important to water sportspeople. So, I began by researching what types of applications already existed for this demographic and learned about their strengths, weakness, and where the opportunities were for my application to fill a need.
                 </p>
-            </div>
-            <div>
-                <picture>
-                    <source srcset="Portfolio Site/img/voda" />
-                    <img src="img/voda/user-test-results.png" alt="user-test-results" />
-                </picture>
+
+                <p>
+                    Through my research, I identified the following opportunities:
+                </p>
+                <ul>
+                    <li>Provide activity recommendations based on weather conditions to take the guesswork away from the user.</li>
+                    <li>Track algae bloom in water sources to keep people out of dangerous bodies of water that can make them sick.</li>
+                    <li>Offer safety suggestions so the user can know how to proceed beforehand.</li>
+                    <li>Simplify and streamline the information provided and its presentation in a way that is not overwhelming to the user.</li>
+                    <li>Allow the user to customize what they see to give them control over their experience and only see what matter to them.</li>
+                </ul>
+                <p>
+                    Other features I wanted to include:
+                 </p>
+                 <ul>
+                    <li>A blog or newsletter to share water sports tips, resources, and trends.</li>
+                    <li>A social chat for sportspeople to connect, share advice and stories, and plan local meetups.</li>
+                 </ul>
+                 <p>
+                    I also noted that the navigation menus need to be condensed. There were several applications with expansive menus and submenus, which can lead to confusion about where to go for information.
+                    After completing my analysis of the current market and competitors, I began to plan for interviewing and surveying my target market; adults who participate in water sports.
+                 </p>
+                 <h3>Survey Goals</h3>
+                 <ul>
+                    <li>What water sports are most popular/common; to know what weather information to emphasize.</li>
+                    <li>What is the median age range of water sportspeople; to tailor the design and functions around that.</li>
+                    <li>Determine the level of expertise; so that the language and jargon are appropriate.</li>
+                 </ul>
+                 <p>
+                    50% of participants were between the ages of 26 and 34. 92% of participants named swimming as one of their sports. And 57% of participants considered themselves a novice at their sport.
+                 </p>
+                 <p>
+                    Other notable findings:
+                 </p>
+                 <ul>
+                    <li>1/3 of the participants did their sport daily.</li>
+                    <li>35% only checked basic weather information.</li>
+                    <li>Only slightly over 1/3 of participants found current wind, weather, and wave information easy or very easy to read.</li>
+                 </ul>
+                 <p>
+                    From these results, I determined my goal was to provide a weather application focused on information such as wave height, wind speed, wind direction, and algae content. It should also have a bright and friendly color scheme so that the user feels engaged when using it.
+                </p>
+                <p>
+                    Based on an overwhelming response that participants did not read blogs or newsletters specific to their sports or belong to any sport-specific groups, I scrapped my ideas for a blog, newsletter, or social chat.
+                </p>
+                <h3>Interview Goals</h3>
+                 <ul>
+                    <li>Learn people's habits before and during their sport/activity; so that I can know how best to present information to them.</li>
+                    <li>Learn what features would be most helpful to them.</li>
+                    <li>Learn the most used applications to see if there's a common theme about what users are finding the most helpful.</li>
+                 </ul>
+                 <p>
+                    My most notable finding from conducting interviews is that there is no satisfactory, all-in-one weather application. Several participants used 2-3 different applications to accomplish their weather-checking. Voda had an opportunity to fill a need and give users an app where they can quickly and easily check the information they need in one place.
+                </p>
             </div>
             <div>
                 <div>
@@ -79,39 +126,63 @@
                 </div>
             </div>
             <div>
+                <h2>Designing For The User</h2>
                 <p>
-                    Early iterations of Voda included having each forecast detail on its own card/page, along with a pop-up window for viewing safety information, and a 2-3 sentenced overview of the forecast. During usability testing, this
-                    layout was not favortable. Participants found overview text redundant and would have preferred the safety information to replace it instead of a pop-up window. This layout was also not efficient once I began to add the
-                    10-Day and Monthly view. So I had to rethink my design and find another way to provide all the necessary information without overwhelming the user. Voda would go through five design iterations before deciding on the
-                    final design.
+                    After doing a final review of my research, the goals of my design would be the following:
                 </p>
+                <ul>
+                    <li>Streamline like the presentation of information, so that users are able to easily navigate the application.</li>
+                    <li>Provide comprehensive information, so that users to not have to leave my application to fill in knowledge gaps.</li>
+                    <li>Give users control over what information the they see, so that the user can own their experience.</li>
+                </ul>
                 <div>
                     <div>
                         <picture>
                             <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/forecast-v2.png" alt="forecast-v2" />
+                            <img src="img/voda/prototype-desktop.png" alt="desktop prototype" />
                         </picture>
                     </div>
                     <div>
                         <picture>
                             <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/forecast-v3.png" alt="forecast-v3" />
-                        </picture>
-                    </div>
-                    <div>
-                        <picture>
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/forecast-v4.png" alt="forecast-v4" />
+                            <img src="img/voda/prototype-mobile.png" alt="mobile prototype" />
                         </picture>
                     </div>
                 </div>
-            </div>
-            <div>
+                <p>Early iterations of Voda included:</p>
+                <ul>
+                    <li>One information card per screen on mobile to give equal attention to all the information and avoid one set of information getting overlooked simply because it was last on the screens.</li>
+                    <li>A pop-up window for the safety information; so that users would focus on the message instead of scrolling past it.</li>
+                    <li>Brief text overview of the weather so that if they didn't want to view all the visual information, they had a snapshot.</li>
+                </ul>
+                <!--screenshots of mid-fidelity wireframes-->
                 <p>
-                    The design is meant to be minimalist and professional, while still feeling warm and friendly. Voda is designed to be fully navigational in as few click as possible. The menu only contains the essentials; weather favorite
-                    locations, settings, help, and legal information. On the forecast page there is an easy to navigate sub menu that shows the forecast views and the radar. All information is displayed on the same screen and is concise to
-                    avoid excessive scrolling.
+                    During usability testing, this view was not favorable. Participants found the overview text redundant and would have preferred that the safety information was in its place instead. This layout was also inefficient once I added the 10-day and monthly views. So I was challenged to find another way to provide the necessary information without cluttering the screen and overwhelming the user.                </p>
+                <p>
+                    I looked through other existing applications and concepts to research different layout structures. I made the following changes to the design:
                 </p>
+                <!--screen shot of design changes with different iterations-->
+                <p>For moderated tests, I timed how long it took to complete three of the main tasks because the goal is for users to check the weather in three minutes or less.</p>
+                <h3>Tasks</h3>
+                <ol>
+                    <li>Search for a location.</li>
+                    <li>Check either daily, 10-day, or monthly weather.</li>
+                    <li>View the radar.</li>
+                </ol>
+                <p>The total average time for task completion was 43 seconds, so I concluded that the design and user flow met this goal.</p>
+            </div>
+           <div>
+               <!--Emotional Design-->
+                <p>
+                    Voda is sophisticated and but light. I wanted users to come onto the application and feel productive and like this is a reliable application that will cater to their specific needs.
+                </p>
+                <!--accompaning screenshot with the information backing this up-->
+           </div>
+            <div>
+                <h2>Final Product</h2>
+                <div>
+                    After completing the final iteration, I conducted a usability test for feedback. Participants liked the weather icons, the overall look of the application, and the information provided, most notably the algae reporting. Participants also commented on how easy the app was to navigate; there were no mentions of people being confused or frustrated by the flow.
+                </div>
                 <div>
                     <div>
                         <picture>
@@ -139,19 +210,13 @@
                     </div>
                 </div>
                 <div>
+                    <p>I completed a minor update in January to combine the wind speed and direction sections. I also added a water temperature section because the research participants mentioned swimming the most.</p>
                     <p>You can view the video below, or click <a href="">here</a> to click through the prototype.</p>
                 </div>
                 <div>
                     <video width="320" height="240" controls muted>
                         <source src="files/video-voda.mp4" type="video/mp4" />
                     </video>
-                </div>
-                <div>
-                    <h2>Conclusion</h2>
-                    <p>
-                        Testers of the final product found the application appealing and intuitive. They were able to move through the app with little to no heaistation. This was the first application I fully designed from concept to
-                        high-fidelity prototypes. I learnt how much truly goes into making a good app, and how proper researching and testing up front saves and frustration.
-                    </p>
                 </div>
             </div>
         </div>
