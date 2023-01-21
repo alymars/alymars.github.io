@@ -37,6 +37,9 @@ h3 {
 img {
     width: 50%;
 }
+#wireframes {
+    width: 25%;
+}
 ol,ul {
 	list-style: none;
 }
@@ -69,6 +72,30 @@ ol,ul {
 	color:#fff;
     text-decoration: underline;
     border-radius: 0;
+}
+#listA {
+    list-style: circle;
+}
+#listB {
+    list-style: circle;
+}
+#listC {
+    list-style: circle;
+}
+#listD {
+    list-style: circle;
+}
+#listE {
+    list-style: circle;
+}
+#listF {
+    list-style: circle;
+}
+#listG {
+    list-style: circle;
+}
+#listH {
+    list-style: circle;
 }
 a {
     color: #3dd07b;
