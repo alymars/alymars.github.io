@@ -15,22 +15,34 @@ header {
 .center {
     text-align: center;
 }
+.left {
+    text-align: left;
+}
 .logo {
     max-width: 150px;
 }
-nav {
+ul{
     display: inline-block;
-    width: 100%;
+    vertical-align: middle;
+}
+nav {
     font-family: "Quicksand", sans-serif;
 }
 nav > ul {
+    margin-right: 15px;
+    padding: 0;
     list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin: 1px;
     padding: 0;
 }
 nav > ul > li {
     display: inline-block;
 }
 nav > ul > li > a {
+    display: inline-block;
     padding: 0 5px;
     text-transform: uppercase;
     font-weight: lighter;
@@ -41,18 +53,18 @@ nav > ul > li > a:visited {
     color: #a8b8ff;
 }
 nav > ul > li > a:hover {
-    color: #708aff;
+    color: #ffe570;
 }
 nav > ul > li > a:active {
     color: orangered;
 }
 main {
-    padding-top: 130px;
+    padding-top: 120px;
 }
 body {
     background-color: rgb(237, 236, 231);
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #222;
@@ -80,8 +92,27 @@ h3 {
     font-weight: 400;
     font-family: "Quicksand", sans-serif;
 }
+h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .row {
-    margin: 25px 0;
+    margin: 25px 0;   
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 #hero {
     background-color: #222;
@@ -91,31 +122,42 @@ h3 {
     color: #f5f3f5;
     width: 100%;
     display: inline-block;
+    text-align: center;
 }
 #hero h1 {
     margin: 0;
     padding: 0.67em;
 }
+#hero span {
+    display: block;
+}
 #work .row {
     padding-bottom: 25px;
 }
 img {
-    width: 50%;
+    max-width: 75%;
+    height: auto;
+  }
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
 #profile {
     max-width: 200px;
-    padding: 20px;
-}
-#voda {
-    float: left;
-    width: 400px;
-}
-#vodab {
-    float: left;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 p {
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
+}
+.p-body {
+    margin-left: 75px;
+    margin-right: 75px;
 }
 #wireframes {
     width: 25%;
@@ -126,27 +168,56 @@ h2 {
 }
 #listA {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
 }
 #listB {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
 }
 #listC {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
 }
 #listD {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
 }
 #listE {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
 }
 #listF {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
 }
 #listG {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
 }
 #listH {
     list-style: circle;
+    margin-left: 100px;
+    margin-right: 75px;
+    line-height: 1.75;
+}
+video {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 a {
     color: #708aff;
@@ -184,18 +255,22 @@ footer ul li {
 .social {
     padding: 0;
     margin: 5px;
+    
 }
 .button {
     background-color: #708aff;
     font-weight: 400;
     padding: 10px;
+    margin-left: 75px;
     color: #f5f3f5;
     border-radius: 8px;
     display: inline-block;
-    transition: 0.2s opcaity;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+
 }
 .button:hover {
-    opacity: 0.5;
+    opacity: 0.8;
     text-decoration: none;
     background-color: #ffe570;
 }
@@ -211,6 +286,8 @@ footer ul li {
     color: #f5f3f5;
     text-transform: uppercase;
     border: 2px solid #708aff;
+    padding: 10px;
+    margin: 0;
 }
 .button.contact:hover {
     background-color: #708aff;
@@ -219,7 +296,104 @@ footer ul li {
 .button.contact:active {
     opacity: 1;
 }
+.button.index {
+    margin-left: 0;
+
+}
 /* Layout styling */
 .container {
     padding: 0 15px;
+}
+#container {
+    display:flex;
+    }
+@keyframes color-change {
+    0% {fill: yellow;}
+    50% {fill: orange;}
+    100% {fill: purple;}
+}
+.sun {
+    animation-duration: 5s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes rotate-left {
+   
+    to {
+        transform: rotate(360deg);
+    }
+}
+.sun-border {
+    animation-name: rotate-left;
+    animation-duration: 15s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -2s;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+.cloud-front {
+    animation-duration: 15s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+    animation: 20s cloud-move-reverse infinite alternate linear;
+}
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: -50px;
+        margin-bottom: 15px;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-about {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+    #about-page h3 { 
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .col-lg-7 {
+        width: 60%;
+    }
+    .col-lg-5 {
+        width: 40%;
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
 }
