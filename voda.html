@@ -16,21 +16,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@200;300;400&display=swap" rel="stylesheet" />
         <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+        <script src="https://kit.fontawesome.com/6a11c53c34.js" crossorigin="anonymous"></script>
         <title>Voda Weather</title>
     </head>
     <body>
         <header>
             <div id="container">
-                <img src="img/portfolio-logo-image-only.png" class="logo" alt="Logo Image" />
-            </div>
-            <div>
-                <nav>
-                    <ul id="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </nav>
+                <div class="navtoggle" id="myNavtoggle">
+                    <img src="img/portfolio-logo-image-only.png" class="logo" alt="Logo Image" />
+                    <nav>
+                        <ul id="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact Me</a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
@@ -42,8 +46,10 @@
             </div>
             <div class="container">
                 <div>
-                    <h4>Voda is a responsive web application designed to provide people who do water sports with an easy-to-understand and informative weather-checking system. This application was a solo project I completed between March
-                    and November 2022, with a minor UI update done in January 2023.</h4>
+                    <h4>
+                        Voda is a responsive web application designed to provide people who do water sports with an easy-to-understand and informative weather-checking system. This application was a solo project I completed between March
+                        and November 2022, with a minor UI update done in January 2023.
+                    </h4>
                 </div>
                 <div>
                     <h2>Defining the Problem</h2>
@@ -84,7 +90,7 @@
                         I also noted that the navigation menus need to be condensed. There were several applications with expansive menus and submenus, which can lead to confusion about where to go for information. After completing my
                         analysis of the current market and competitors, I began to plan for interviewing and surveying my target market; adults who participate in water sports.
                     </p>
-                    <br>
+                    <br />
                     <div>
                         <h3 class="center">Survey Goals</h3>
                         <ul id="listC">
@@ -111,7 +117,7 @@
                             Based on an overwhelming response that participants did not read blogs or newsletters specific to their sports or belong to any sport-specific groups, I scrapped my ideas for a blog, newsletter, or social chat.
                         </p>
                     </div>
-                    <br>
+                    <br />
                     <div>
                         <h3 class="center">Interview Goals</h3>
                         <ul id="listE">
@@ -139,7 +145,7 @@
                         </picture>
                     </div>
                 </div>
-                <br>
+                <br />
                 <div>
                     <h2>Designing For The User</h2>
                     <p class="p-body">
@@ -184,7 +190,7 @@
                     <p class="p-body">
                         For moderated tests, I timed how long it took to complete three of the main tasks because the goal is for users to check the weather in three minutes or less.
                     </p>
-                    <br>
+                    <br />
                     <h3 class="center">Tasks</h3>
                     <ol id="listH">
                         <li>Search for a location.</li>
@@ -202,7 +208,7 @@
                     </p>
                     <!--accompaning screenshot with the information backing this up-->
                 </div>
-                <br>
+                <br />
                 <div>
                     <h2>Final Product</h2>
                     <div>
@@ -212,7 +218,7 @@
                             speed and direction sections. I also added a water temperature section because the research participants mentioned swimming the most.
                         </p>
                     </div>
-                    <br>
+                    <br />
                     <div class="row">
                         <div class="column">
                             <picture>
@@ -223,23 +229,23 @@
                         <div class="column">
                             <picture>
                                 <source srcset="Portfolio Site/img/voda" />
-                                <img src="img/voda/mockup-daily-forecast.png"  alt="mockup-daily-forecast" />
+                                <img src="img/voda/mockup-daily-forecast.png" alt="mockup-daily-forecast" />
                             </picture>
                         </div>
                         <div class="column">
                             <picture>
                                 <source srcset="Portfolio Site/img/voda" />
-                                <img src="img/voda/mockup-monthly-forecast.png"  alt="mockup-monthly-forecast" />
+                                <img src="img/voda/mockup-monthly-forecast.png" alt="mockup-monthly-forecast" />
                             </picture>
                         </div>
                         <div class="column">
                             <picture>
                                 <source srcset="Portfolio Site/img/voda" />
-                                <img src="img/voda/mockup-radar.png"  alt="mockup-radar" />
+                                <img src="img/voda/mockup-radar.png" alt="mockup-radar" />
                             </picture>
                         </div>
                     </div>
-                    <br>
+                    <br />
                     <div>
                         <p class="p-body">
                             You click the video below to watch a 30-second walkthrough of the mobile prototype. Or, you can interact with desktop and mobile prototypes!
@@ -374,5 +380,7 @@
                 </p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
