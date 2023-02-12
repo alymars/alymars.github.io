@@ -98,13 +98,22 @@ h3 {
     font-family: "Quicksand", sans-serif;
 }
 h4 {
-    font-size: 1.5em;
+    font-size: 1.0em;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 50px;
     margin-right: 50px;
+}
+mark.orange {
+    color: #CB2F00;
+    background: none;
+}
+mark.heart {
+    color:#ffe570;
+    font-size: 18px;
+    background: none;
 }
 .row {
     margin: 25px 0;
@@ -129,15 +138,30 @@ h4 {
     display: inline-block;
     text-align: center;
 }
-#hero h1 {
-    margin: 0;
-    padding: 0.67em;
-}
+
 #hero span {
     display: block;
 }
 #work .row {
     padding-bottom: 25px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.grid-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+    max-width: none;
+}
+.midproto {
+    width: 50% !important;
+    height: auto !important;
+    object-fit: fill !important;
+    max-width: none;
 }
 img {
     max-width: 75%;
@@ -148,6 +172,12 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+}
+.images {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 #profile {
     max-width: 200px;
@@ -163,6 +193,11 @@ p {
 .p-body {
     margin-left: 75px;
     margin-right: 75px;
+}
+.round {
+    border: 2px solid #CB2F00;
+    border-radius: 8px;
+    padding: 5px;
 }
 #wireframes {
     width: 25%;
@@ -214,10 +249,15 @@ h2 {
     line-height: 1.75;
 }
 #listH {
-    list-style: circle;
+    list-style: decimal;
     margin-left: 100px;
     margin-right: 75px;
     line-height: 1.75;
+    display: inline-block;
+    text-align: left
+}
+.clist {
+    text-align: center;
 }
 video {
     display: block;
@@ -272,6 +312,34 @@ footer ul li {
     transition-duration: 0.2s;
     transition-property: opacity;
 }
+.button.resume {
+    background-color: #708aff;
+    font-weight: 400;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    transition-duration: 0.2s;
+}
+.button.resume:hover {
+    opacity: 1;
+}
+.prototype-button {
+    background-color: #708aff;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #f5f3f5;
+    border-radius: 0px;
+    display: inline-block;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+}
+.prototype-button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    background-color: #ffe570;
+}
 .button:hover {
     opacity: 0.8;
     text-decoration: none;
@@ -302,6 +370,26 @@ footer ul li {
 .button.index {
     margin-left: 0;
 }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: orangered; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 45px; /* Rounded corners */
+  }
+  
+  #myBtn:hover {
+    background-color: #edece6; /* Add a dark-grey background on hover */
+    text-decoration: underline; /* Underlines text on hover */
+    border: 2px solid orangered; /* Add a orangered border on hover */
+  }
 /* Layout styling */
 .container {
     padding: 0 15px;
@@ -317,70 +405,11 @@ footer ul li {
 }
 .navtoggle.responsive li  {
     display: block;
-   padding-top: 20px;
-   text-align: center;
+padding-top: 20px;
+text-align: center;
 }
 .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
-}
-@keyframes color-change {
-    0% {
-        fill: yellow;
-    }
-    50% {
-        fill: orange;
-    }
-    100% {
-        fill: purple;
-    }
-}
-.sun {
-    animation-duration: 5s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-@keyframes rotate-left {
-    to {
-        transform: rotate(360deg);
-    }
-}
-.sun-border {
-    animation-name: rotate-left;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -2s;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-.cloud-front {
-    animation-duration: 15s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-.cloud-back {
-    animation: 20s cloud-move-reverse infinite alternate linear;
 }
 @media only screen and (min-width: 640px) {
     header {
