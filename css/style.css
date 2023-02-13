@@ -348,7 +348,7 @@ footer ul li {
     background-color: #708aff;
     font-weight: 400;
     padding: 10px;
-    margin-left: 15px;
+    margin-left: 0;
     border-radius: 8px;
     display: inline-block;
     transition-duration: 0.2s;
@@ -415,13 +415,12 @@ footer ul li {
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 45px; /* Rounded corners */
-  }
-  
-  #myBtn:hover {
+}
+#myBtn:hover {
     background-color: #edece6; /* Add a dark-grey background on hover */
     text-decoration: underline; /* Underlines text on hover */
     border: 2px solid orangered; /* Add a orangered border on hover */
-  }
+}
 /* Layout styling */
 .container {
     padding: 0;
@@ -440,17 +439,17 @@ footer ul li {
 }
 .navtoggle.responsive li  {
     display: block;
-padding-top: 20px;
-text-align: center;
+    padding-top: 10px;
+    text-align: center;
 }
 .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
 }
 @media only screen and (max-width: 640px) {
     .grid-container.wireframes {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
 @media only screen and (min-width: 640px) {
     header {
         text-align: unset;
