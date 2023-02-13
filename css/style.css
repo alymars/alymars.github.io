@@ -55,7 +55,7 @@ nav > ul > li > a {
     color: #f5f3f5;
 }
 nav > ul > li > a:visited {
-    color: #a8b8ff;
+    color: #f5f3f5;
 }
 nav > ul > li > a:hover {
     color: #ffe570;
@@ -145,7 +145,10 @@ mark.heart {
     display: inline-block;
     text-align: center;
 }
-
+.about {
+    background-color: #edece6 !important;
+    color: #222 !important;
+}
 #hero span {
     display: block;
 }
@@ -205,11 +208,16 @@ img.wireframes {
     display: block;
 }
 #profile {
-    max-width: 200px;
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 250px;
+    float: left;
+    padding: 15px;
+    margin-bottom: 2px;
+}
+p.about {
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 p {
     text-align: left;
@@ -338,7 +346,7 @@ footer ul li {
     font-weight: 400;
     padding: 10px;
     margin-left: 75px;
-    color: #f5f3f5;
+    color: #222;
     border-radius: 8px;
     display: inline-block;
     transition-duration: 0.2s;
@@ -357,23 +365,27 @@ footer ul li {
     opacity: 1;
 }
 .prototype-button {
-    background-color: #708aff;
+    background-color: #edece6;
+    border: 2px solid #708aff;
     font-weight: 400;
     padding: 10px;
     margin-bottom: 20px;
-    color: #f5f3f5;
-    border-radius: 0px;
+    color: #222;
+    border-radius: 8px;
     display: inline-block;
     transition-duration: 0.2s;
     transition-property: opacity;
 }
 .prototype-button:hover {
-    opacity: 0.8;
+    opacity: 1;
     text-decoration: none;
-    background-color: #ffe570;
+    background-color: #708aff;
+}
+.prototype-button:visited {
+    color:#222;
 }
 .button:hover {
-    opacity: 0.8;
+    opacity: 1;
     text-decoration: none;
     background-color: #ffe570;
 }
@@ -395,6 +407,7 @@ footer ul li {
 .button.contact:hover {
     background-color: #708aff;
     color: #f5f3f5;
+    opacity: 1;
 }
 .button.contact:active {
     opacity: 1;
