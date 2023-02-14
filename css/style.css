@@ -158,8 +158,6 @@ mark.heart {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 10px;
-    column-gap: 10px;
 }
 .grid-container.wireframes {
     display: grid;
@@ -171,10 +169,13 @@ mark.heart {
     max-width: 90%;
 }
 .grid-image {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
     object-fit: fill;
-    max-width: none; 
+    max-width: fit-content; 
 }
 .grid-image.wireframes {
     width: 100%;
