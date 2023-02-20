@@ -416,6 +416,20 @@ footer ul li {
 .button.index {
     margin-left: 0;
 }
+.button.soon {
+    background-color: grey;
+    font-weight: 400;
+    padding: 10px;
+    margin-left: 0;
+    color: #222;
+    border-radius: 8px;
+    display: inline-block;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+}
+.link {
+    color:#708aff !important;
+}
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
