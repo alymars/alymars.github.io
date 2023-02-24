@@ -202,6 +202,10 @@ img.wireframes {
     margin-right: auto;
     margin-top: 50px;
 }
+.picture.gif {
+    max-width: 700px;
+    height: auto;
+}
 .images {
     max-width: 50%;
     margin-left: auto;
@@ -306,7 +310,7 @@ video {
     margin-bottom: 20px;
 }
 a {
-    color: #708aff;
+    color: #94A8FF;
     text-decoration: none;
 }
 a:hover,
@@ -343,8 +347,8 @@ footer ul li {
     margin: 5px;
 }
 .button {
-    background-color: #708aff;
-    font-weight: 400;
+    background-color: #94A8FF;
+    font-weight:bold;
     padding: 10px;
     margin-left: 75px;
     color: #222;
@@ -354,8 +358,7 @@ footer ul li {
     transition-property: opacity;
 }
 .button.resume {
-    background-color: #708aff;
-    font-weight: 400;
+    background-color: #94A8FF;
     padding: 10px;
     margin-left: 0;
     border-radius: 8px;
@@ -367,7 +370,7 @@ footer ul li {
 }
 .prototype-button {
     background-color: #edece6;
-    border: 2px solid #708aff;
+    border: 2px solid #94A8FF;
     font-weight: 400;
     padding: 10px;
     margin-bottom: 20px;
@@ -380,7 +383,7 @@ footer ul li {
 .prototype-button:hover {
     opacity: 1;
     text-decoration: none;
-    background-color: #708aff;
+    background-color: #94A8FF;
 }
 .prototype-button:visited {
     color:#222;
@@ -401,12 +404,12 @@ footer ul li {
     background-color: transparent;
     color: #f5f3f5;
     text-transform: uppercase;
-    border: 2px solid #708aff;
+    border: 2px solid #94A8FF;
     padding: 10px;
     margin: 0;
 }
 .button.contact:hover {
-    background-color: #708aff;
+    background-color: #94A8FF;
     color: #f5f3f5;
     opacity: 1;
 }
@@ -417,8 +420,7 @@ footer ul li {
     margin-left: 0;
 }
 .button.soon {
-    background-color: grey;
-    font-weight: 400;
+    background-color: #ACACAC;
     padding: 10px;
     margin-left: 0;
     color: #222;
@@ -428,7 +430,7 @@ footer ul li {
     transition-property: opacity;
 }
 .link {
-    color:#708aff !important;
+    color:#94A8FF !important;
 }
 #myBtn {
     display: none; /* Hidden by default */
@@ -438,16 +440,16 @@ footer ul li {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: orangered; /* Set a background color */
-    color: black; /* Text color */
+    background-color: #FF8D63; /* Set a background color */
+    color: #222; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 45px; /* Rounded corners */
 }
 #myBtn:hover {
     background-color: #edece6; /* Add a dark-grey background on hover */
-    text-decoration: underline; /* Underlines text on hover */
-    border: 2px solid orangered; /* Add a orangered border on hover */
+    text-decoration: none; /* Underlines text on hover */
+    border: 2px solid #FF8D63; /* Add a orangered border on hover */
 }
 /* Layout styling */
 .container {
@@ -487,7 +489,7 @@ footer ul li {
         margin-right: 15px;
         width: auto;
         float: right;
-    }    
+    }
     nav > ul > li {
         display: inline-block;
     }  
