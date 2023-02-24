@@ -1,80 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@200;300;400&display=swap" rel="stylesheet" />
-        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-        <script src="https://kit.fontawesome.com/6a11c53c34.js" crossorigin="anonymous"></script>
-        <title>About The Designer</title>
-    </head>
-    <body id="about-page">
-        <header>
-            <div id="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <img src="img/portfolio-logo-image-only.png" class="logo" alt="Logo Image" />
-                    <nav class>
-                        <ul id="nav">
-                            <li><a href="index.html">Home</a></li>
-                            <!--Takes user back to homepage-->
-                            <li><a href="index.html#My Work">My Work</a></li>
-                            <li>
-                                <a href="https://docs.google.com/document/d/1ah0mfzn5v0yRFs8_3bOkqleL-h7HvubnC_UFKjJw1C0/edit?usp=sharing" target="_blank" class="button resume">Resume</a><!--Viewer can look at my resume-->
-                                <!--Viewer can download my resume-->
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-                                <!--Head will turn into a sidebar menu from a top bar-->
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div> 
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button> <!--Back to Top button-->
-            </div>
-            <div id="hero" class="about">
-                <div class="container">
-                    <span id="span" class="about">
-                        <h2>My Story</h2>
-                    </span>
-                </div>
-            </div>
-            <div class="container">
-                <div>
-                    <div>
-                        <picture>
-                            <img src="img/about-pic.jpg" id="profile" alt="profile-pic" />
-                        </picture>
-                    </div>
-                    <div>
-                        <p class="about">
-                            I have worked in retail, property management, banking, parks &amp; recreation, and, most recently, SaaS. These industries have a common theme:
-                            <strong><mark class="orange">people want a good experience.</mark></strong> It makes no difference if they buy bed sheets, rent an apartment, or use an app. 
-                            People want to feel like their needs are being met and that there is value in their interactions.<br>
-                            My commitment to <strong><mark class="orange">customer-first thinking</mark></strong> sparked my interest in UX. 
-                            I have developed a deep empathy for the user and learned firsthand their pain points.
-                            My mission is to deliver <strong><mark class="orange">clear and concise solutions</mark></strong> that ensure success for both users and stakeholders.<br />
-                            I am always looking for new challenges and opportunities to grow, and I am excited to continue my journey into UX and grow as a professional.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <!--<div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <script
+      src="https://kit.fontawesome.com/6a11c53c34.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About The Designer</title>
+  </head>
+  <body id="about-page">
+    <header>
+      <div id="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img
+            src="img/portfolio-logo-image-only.png"
+            class="logo"
+            alt="Logo image of a sun"
+          />
+          <nav class>
+            <ul id="nav">
+              <li><a href="index.html">Home</a></li>
+              <!--Takes user back to homepage-->
+              <li><a href="index.html#MyWork">My Work</a></li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1ah0mfzn5v0yRFs8_3bOkqleL-h7HvubnC_UFKjJw1C0/edit?usp=sharing"
+                  target="_blank"
+                  class="button resume"
+                  >Resume</a
+                ><!--Viewer can look at my resume-->
+                <!--Viewer can download my resume-->
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+                <!--Head will turn into a sidebar menu from a top bar-->
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Go to Top
+        </button>
+        <!--Back to Top button-->
+      </div>
+      <div id="hero" class="about">
+        <div class="container">
+          <div id="span" class="about">
+            <h2>My Story</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <div>
+            <picture>
+              <img
+                src="img/about-pic.jpg"
+                id="profile"
+                alt="Picture of the UX designer"
+              />
+            </picture>
+          </div>
+          <div>
+            <p class="about">
+              I have worked in retail, property management, banking, parks &amp;
+              recreation, and, most recently, SaaS. These industries have a
+              common theme:
+              <strong
+                ><mark class="orange"
+                  >people want a good experience.</mark
+                ></strong
+              >
+              It makes no difference if they buy bed sheets, rent an apartment,
+              or use an app. People want to feel like their needs are being met
+              and that there is value in their interactions.<br />
+              My commitment to
+              <strong
+                ><mark class="orange">customer-first thinking</mark></strong
+              >
+              sparked my interest in UX. I have developed a deep empathy for the
+              user and learned firsthand their pain points. My mission is to
+              deliver
+              <strong
+                ><mark class="orange">clear and concise solutions</mark></strong
+              >
+              that ensure success for both users and stakeholders.<br />
+              I am always looking for new challenges and opportunities to grow,
+              and I am excited to continue my journey into UX and grow as a
+              professional.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!--<div class="container">
                 <div class="row">
                     <div class="center">
                         <h2>Skills and Tools</h2>
@@ -112,20 +167,29 @@
                     </div>
                 </div>
             </div>-->
-        </main>
-        <footer id="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p class="center">
-                    If you would like to discuss an oppurtunity, don't hesitate to reach out! You can also view my Linkedin <a href="https://www.linkedin.com/in/alyssamars/" class="link" target="_blank">here</a>.
-                </p>
-                <div>
-                    <a href="mailto:alyssa.mars@proton.me" class="button contact">Email me here!</a>
-                </div>
-                <br />
-                <br />
-                <div>
-                    <!--<div class="social">
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="center">
+          If you would like to discuss an oppurtunity, don't hesitate to reach
+          out! You can also view my Linkedin
+          <a
+            href="https://www.linkedin.com/in/alyssamars/"
+            class="link"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+        <div>
+          <a href="mailto:alyssa.mars@proton.me" class="button contact"
+            >Email me here!</a
+          >
+        </div>
+        <br />
+        <br />
+        <div>
+          <!--<div class="social">
                         <a href="https://www.linkedin.com/in/alyssamars/" target="_blank">
                             <svg height="40px" width="40px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
                                 <g stroke-width="0"></g>
@@ -168,11 +232,15 @@
                             </svg>
                         </a>
                     </div>-->
-                </div>
-                <p>Site built by me <mark class="heart">&hearts;</mark></p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+        <p>Site built by me <mark class="heart">&hearts;</mark></p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

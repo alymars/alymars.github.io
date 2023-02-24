@@ -1,285 +1,545 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <script
+      src="https://kit.fontawesome.com/6a11c53c34.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Voda Weather</title>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img
+            src="img/portfolio-logo-image-only.png"
+            class="logo"
+            alt="Logo image of a sun"
+          />
+          <nav>
+            <ul id="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="index.html#MyWork">My Work</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact Me</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class>
+        <img
+          alt="voda-gif-walkthrough"
+          class="picture gif"
+          src="img/voda/voda-gif-walkthrough.gif"
         />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@200;300;400&display=swap" rel="stylesheet" />
-        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-        <script src="https://kit.fontawesome.com/6a11c53c34.js" crossorigin="anonymous"></script>
-        <title>Voda Weather</title>
-    </head>
-    <body>
-        <header>
-            <div id="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <img src="img/portfolio-logo-image-only.png" class="logo" alt="Logo Image" />
-                    <nav>
-                        <ul id="nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Me</a></li>
-                            <li><a href="index.html#My Work">My Work</a></li>
-                            <li><a href="#contact" onclick="menuToggle()">Contact Me</a></li>
-                            <li>
-                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+      </div>
+      <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Go to Top
+        </button>
+        <!--Back to Top button-->
+      </div>
+      <div class="container">
+        <div>
+          <h4 class="center">
+            <strong
+              >Voda is a responsive web application designed to provide people
+              who do water sports with <br />
+              an easy-to-understand and informative weather-checking
+              system.</strong
+            >
+          </h4>
+        </div>
+        <div>
+          <h2>Defining the Problem</h2>
+          <p class="p-body">
+            To safely and efficiently enjoy your time on the water, it is best
+            to check weather conditions beyond the temperature and precipitation
+            chances. You want to know wave strength, wind speed, and algae
+            content. Existing weather applications are not meeting the goal of
+            making complex weather data accessible and easy to understand. Often
+            you have to pay for more detailed weather reports, or the language
+            is too technical for the average person to comprehend.
+          </p>
+          <p class="p-body">
+            Voda
+            <mark class="orange"><b>simplifies complex weather data</b></mark>
+            so that you can check all the necessary information.
+            <mark class="orange"><b>All in 3 minutes or less.</b></mark>
+          </p>
+        </div>
+        <br />
+        <div>
+          <h2>The Process</h2>
+          <p class="p-body">
+            As a former figure skater from the Midwest, I knew next to nothing
+            about what kind of information was important to water sportspeople.
+            So, I began by researching what types of applications already
+            existed for this demographic and learned about their strengths,
+            weakness, and where the opportunities were for my application to
+            fill a need.
+          </p>
+          <div class="center">
+            <h3 class="center">Opportunities</h3>
+            <ul id="listA">
+              <li>
+                Provide activity recommendations based on weather conditions to
+                take the guesswork away from the user.
+              </li>
+              <li>
+                Track algae blooms in water sources to keep people out of
+                dangerous bodies of water that can make them sick.
+              </li>
+              <li>
+                Offer safety suggestions so the user can know how to proceed
+                beforehand.
+              </li>
+              <li>
+                Simplify and streamline the information provided and its
+                presentation in a way that is not overwhelming to the user.
+              </li>
+              <li>
+                Allow the user to customize what they see to give them control
+                over their experience and only see what matters to them.
+              </li>
+            </ul>
+          </div>
+          <div class="center">
+            <p class="p-body">Other features I wanted to include:</p>
+            <ul id="listB">
+              <li>
+                A blog or newsletter to share water sport tips, resources, and
+                trends.
+              </li>
+              <li>
+                A social chat for sportspeople to connect, share advice and
+                stories, and plan local meetups.
+              </li>
+            </ul>
+          </div>
+          <p class="p-body">
+            I also noted that the
+            <mark class="orange"
+              ><b>navigation menus need to be condensed</b></mark
+            >. There were several applications with expansive menus and
+            submenus, which can lead to confusion about where to go for
+            information. After completing my analysis of the current market and
+            competitors, I began to plan for interviewing and surveying my
+            target market; adults who participate in water sports.
+          </p>
+          <br />
+          <div>
+            <div class="center">
+              <h3 class="center">Survey Goals</h3>
+              <ul id="listC">
+                <li>
+                  What water sports are most popular/common; to know what
+                  weather information to emphasize.
+                </li>
+                <li>
+                  What is the median age range of water sportspeople; to tailor
+                  the design and functions around that.
+                </li>
+                <li>
+                  Determine the level of expertise; so that the language and
+                  jargon are appropriate.
+                </li>
+              </ul>
             </div>
-        </header>
-        <main>
-            <div class>
-                <img alt="voda-gif-walkthrough" class="picture" width="700" height="auto" src="img/voda/voda-gif-walkthrough.gif">
-
+            <h3 class="center">Results</h3>
+            <picture>
+              <source srcset="img/voda/survey-results.png" />
+              <img
+                src="img/voda/survey-results.png"
+                class="images"
+                alt="Voda user survey results"
+              />
+            </picture>
+            <p class="p-body">
+              From these results, I determined my goal was to
+              <mark class="orange"
+                ><b
+                  >provide a weather application focused on information such as
+                  wave height, wind speed, wind direction, and algae content</b
+                ></mark
+              >. It should also have a
+              <mark class="orange"><b> bright</b></mark> and
+              <mark class="orange"><b> friendly</b></mark> color scheme so that
+              the user feels engaged when using it.
+            </p>
+            <p class="p-body">
+              Based on an overwhelming response that participants did not read
+              blogs or newsletters specific to their sports or belong to any
+              sport-specific groups, I scrapped my ideas for a blog, newsletter,
+              or social chat.
+            </p>
+          </div>
+          <div>
+            <h3 class="center">Interview Goals</h3>
+            <div class="center">
+              <ul id="listE">
+                <li>
+                  Learn people's habits before and during their sport/activity;
+                  so that I can know how best to present information to them.
+                </li>
+                <li>Learn what features would be most helpful to them.</li>
+                <li>
+                  Learn the most used applications to see if there's a common
+                  theme about what users are finding the most helpful.
+                </li>
+              </ul>
             </div>
-            <div> 
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button> <!--Back to Top button-->
-            </div>
-            <div class="container">
-                <div>
-                    <h4 class="center">
-                        <strong>Voda is a responsive web application designed to provide people who do water sports with <br> an easy-to-understand and informative weather-checking system.</strong>
-                    </h4>
-                </div>
-                <div>
-                    <h2>Defining the Problem</h2>
-                    <p class="p-body">
-                        To safely and efficiently enjoy your time on the water, it is best to check weather conditions beyond the temperature and precipitation chances. You want to know wave strength, wind speed, and algae content. Existing
-                        weather applications are not meeting the goal of making complex weather data accessible and easy to understand. Often you have to pay for more detailed weather reports, or the language is too technical for the
-                        average person to comprehend.
-                    </p>
-                    <p class="p-body">
-                        Voda <mark class="orange"><b>simplifies complex weather data</b></mark> so that you can check all the necessary information. <mark class="orange"><b>All in 3 minutes or less.</b></mark>
-                    </p>
-                </div>
-                <br />
-                <div>
-                    <h2>The Process</h2>
-                    <p class="p-body">
-                        As a former figure skater from the Midwest, I knew next to nothing about what kind of information was important to water sportspeople. So, I began by researching what types of applications already existed for this
-                        demographic and learned about their strengths, weakness, and where the opportunities were for my application to fill a need.
-                    </p>
-                    <div class="center">
-                        <h3 class="center">Opportunities</h3>
-                    <ul id="listA">
-                        <li>Provide activity recommendations based on weather conditions to take the guesswork away from the user.</li>
-                        <li>Track algae blooms in water sources to keep people out of dangerous bodies of water that can make them sick.</li>
-                        <li>Offer safety suggestions so the user can know how to proceed beforehand.</li>
-                        <li>Simplify and streamline the information provided and its presentation in a way that is not overwhelming to the user.</li>
-                        <li>Allow the user to customize what they see to give them control over their experience and only see what matters to them.</li>
-                    </ul>
-                    </div>
-                    <div class="center">
-                    <p class="p-body">
-                        Other features I wanted to include:
-                    </p>
-                    <ul id="listB">
-                        <li>A blog or newsletter to share water sport tips, resources, and trends.</li>
-                        <li>A social chat for sportspeople to connect, share advice and stories, and plan local meetups.</li>
-                    </ul>
-                    </div>
-                    <p class="p-body">
-                        I also noted that the <mark class="orange"><b>navigation menus need to be condensed</b></mark>. There were several applications with expansive menus and submenus, which can lead to confusion about where to go for
-                        information. After completing my analysis of the current market and competitors, I began to plan for interviewing and surveying my target market; adults who participate in water sports.
-                    </p>
-                    <br />
-                    <div>
-                        <div class="center">
-                        <h3 class="center">Survey Goals</h3>
-                        <ul id="listC">
-                            <li>What water sports are most popular/common; to know what weather information to emphasize.</li>
-                            <li>What is the median age range of water sportspeople; to tailor the design and functions around that.</li>
-                            <li>Determine the level of expertise; so that the language and jargon are appropriate.</li>
-                        </ul>
-                        </div>
-                        <h3 class="center">Results</h3>
-                        <picture>
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/survey-results.png" class="images" alt="survey-results" />
-                        </picture>
-                        <p class="p-body">
-                            From these results, I determined my goal was to <mark class="orange"><b>provide a weather application focused on information such as wave height, wind speed, wind direction, and algae content</b></mark>. It
-                            should also have a <mark class="orange"><b> bright</b></mark> and <mark class="orange"><b> friendly</b></mark> color scheme so that the user feels engaged when using it.
-                        </p>
-                        <p class="p-body">
-                            Based on an overwhelming response that participants did not read blogs or newsletters specific to their sports or belong to any sport-specific groups, I scrapped my ideas for a blog, newsletter, or social chat.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="center">Interview Goals</h3>
-                        <div class="center">
-                        <ul id="listE">
-                            <li>Learn people's habits before and during their sport/activity; so that I can know how best to present information to them.</li>
-                            <li>Learn what features would be most helpful to them.</li>
-                            <li>Learn the most used applications to see if there's a common theme about what users are finding the most helpful.</li>
-                        </ul>
-                        </div>
-                        <p class="p-body">
-                            My most notable finding from conducting interviews is that <mark class="orange"><b>there is no satisfactory, all-in-one weather application</b></mark>. Several participants used
-                            <mark class="orange"><b> 2-3 different applications to accomplish their weather-checking.</b></mark> Voda had an opportunity to fill a need and give users an app where they can quickly and easily check the
-                            information they need in one place.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-container">
-                <img src="img/voda/persona-james.png" class="grid-image" alt="persona-james" />
-                <img src="img/voda/persona-monica.png" class="grid-image" alt="persona-clair" />
-                <img src="img/voda/journeyMap-james.png" class="grid-image" alt="journeyMap-james" />
-                <img src="img/voda/journeyMap-monica.png" class="grid-image" alt="journeyMap-monica" />
-            </div>
-            <br />
-            <div>
-                <h2>Designing For The User</h2>
-                <p class="p-body">
-                    After doing a final review of my research, the goals of my design would be to:
-                </p>
-                <div class="center">
-                <ul id="listF">
-                    <li>Streamline the presentation of information, so that users are able to easily navigate the application.</li>
-                    <li>Provide comprehensive information, so that users do not have to leave my application to fill in knowledge gaps.</li>
-                    <li>Give users control over what information the they see, so that the user can own their experience.</li>
-                </ul>
-                </div>
-                <div>
-                    <figure><img src="img/voda/user-flow.png" class="picture" alt="user-flow"><br>
-                    <figcaption class="center">The main user flow of Voda. The goal here is to reduce the number of clicks as much as possible.</figcaption>
-                    </figure>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <figure>
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/prototype-desktop.png" class="picture" alt="desktop prototype" /> <br><br>
-                            <figcaption class="center">Orginal Voda desktop (left) and mobile (right) wireframes showing the onboarding.
-                                Onabording was removed in later interations because it proved to be unneeded.</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-6">
-                        <picture>
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/prototype-mobile.png" class="picture" alt="mobile prototype" />
-                        </picture>
-                    </div>
-                </div>
-                <h3 class="center">Early Problems and Usability Testing</h3>
-                <p class="p-body">
-                    Early iterations of Voda included:
-                </p>
-                <div>
-                <ul id="listG">
-                    <li>One information card per screen on mobile to give equal attention to all the information and avoid one set of information getting overlooked simply because it was last on the screen.</li>
-                    <li>A pop-up window for the safety information; so that users would focus on the message instead of scrolling past it.</li>
-                    <li> A brief text overview of the weather so that if they didn't want to view all the visual information, they had a snapshot.</li>
-                </ul>
-                </div>
-                <p class="p-body">
-                    During usability testing, this view was not favorable. Participants found the overview text redundant and would have preferred that the safety information was in its place instead. This layout was also inefficient once I
-                    added the 10-day and monthly views. So I was challenged to find another way to provide the necessary information without cluttering the screen and overwhelming the user.
-                    I looked through other existing applications and concepts to research different layout structures in order to improve my design.
-                </p>
-                <div class="grid-container wireframes">
-                    <figure>
-                        <source srcset="Portfolio Site/img/voda" />
-                        <img src="img/voda/midfi-prototype.png" class="grid-image wireframes" alt="mockup-homepage" />
-                        <figcaption>Mid-fidelity wireframe with original design</figcaption>
-                    </figure>
-                    <figure>
-                        <source srcset="Portfolio Site/img/voda" />
-                        <img src="img/voda/verision-2.png" class="grid-image wireframes" alt="mockup-daily-forecast" />
-                        <figcaption>Put all the weather information onto one screen.</figcaption>
-                    </figure>
-                    <figure>
-                        <source srcset="Portfolio Site/img/voda" />
-                        <img src="img/voda/version-3.png" class="grid-image wireframes" alt="mockup-daily-forecast" />
-                        <figcaption>Added buttons to adjust the timeframe.</figcaption>
-                    </figure>
-                    <figure>
-                        <source srcset="Portfolio Site/img/voda" />
-                        <img src="img/voda/version-4.png" class="grid-image wireframes" alt="mockup-daily-forecast" />
-                        <figcaption>Added buttons to adjust the timeframe.</figcaption>
-                    </figure>
-                </div>                
-                <h3 class="center">Tasks</h3>
-                <div class="clist">
-                <ol id="listH">
-                    <li>Search for a location.</li>
-                    <li>Check either daily, 10-day, or monthly weather.</li>
-                    <li>View the radar.</li>
-                </ol>
-                </div>
-                <p class="p-body">
-                    For moderated tests, I timed how long it took to complete three of the main tasks because the goal is for users to check the weather in three minutes or less.
-                    The total <mark class="orange"><b> average time for task completion was 43 seconds</b></mark>, so I concluded that the design and user flow met this goal.
-                </p>
-                <div class="container">
-                    <img src ="img/voda/affinity-map.png" class="picture" alt="affinity-map">
-                </div>
-            </div>
-            <div>
-                <h2>Final Product</h2>
-                <div>
-                    <p class="p-body">
-                        After completing the final iteration, I conducted a usability test for feedback. Participants liked the weather icons, the overall look of the application, and the information provided, most notably the algae
-                        reporting. Participants also commented on how easy the app was to navigate; there were no mentions of people being confused or frustrated by the flow. I completed a <mark class="orange"><b>minor update in January</b></mark> to <mark class="orange"><b>combine the wind speed
-                        and direction sections</b></mark>. I also <mark class="orange"><b>added a water temperature section</b></mark> because the research participants mentioned swimming the most.
-                    </p>
-                </div>
-                <br />
-                <div class="grid-container wireframes">
-                        <figure>
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/homepage-sidebar-loggedIn.png" class="grid-image wireframes" alt="mockup-homepage" />
-                            <figcaption>A clean menu, easy-to-navigate menu.</figcaption>
-                        </figure>
-                        <figure>
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/forecast-daily.png" class="grid-image wireframes" alt="forecast-daily"/>
-                            <figcaption>All information on on screen for easy viewing.</figcaption>
-                        </figure>
-                        <figure>
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/algae-report.png" class="grid-image wireframes" alt="mockup-algae" />
-                                <figcaption>Algae reports for users to increase safety.</figcaption>
-                        </figure>
-                        <figure>                                
-                            <source srcset="Portfolio Site/img/voda" />
-                            <img src="img/voda/settings.png" class="grid-image wireframes" alt="mockup-settings" />
-                            <figcaption>Easily toggle sections on and off, so you see only what you want to.</figcaption>
-                        </figure>
-                </div>
-                <div>
-                  
-                    <div class="center">
-                        <a href="https://www.figma.com/file/8NtlywPos0ib0tIG7EpGiz/voda-final-screens?node-id=0%3A1&t=XuIEDcwOoRV7ENSB-1" class="prototype-button" target="_blank">Click to View Full Prototype</a>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer id="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p class="center">
-                    If you would like to discuss an oppurtunity, don't hesitate to reach out! You can also view my Linkedin <a href="https://www.linkedin.com/in/alyssamars/" class="link" target="_blank">here</a>.
-                </p>
-                <div>
-                    <a href="mailto:alyssa.mars@proton.me" class="button contact">Email me here!</a>
-                </div>
-                <br />
-                <br />
-                <div>
-                    <!--<div class="social">
+            <p class="p-body">
+              My most notable finding from conducting interviews is that
+              <mark class="orange"
+                ><b
+                  >there is no satisfactory, all-in-one weather application</b
+                ></mark
+              >. Several participants used
+              <mark class="orange"
+                ><b>
+                  2-3 different applications to accomplish their
+                  weather-checking.</b
+                ></mark
+              >
+              Voda had an opportunity to fill a need and give users an app where
+              they can quickly and easily check the information they need in one
+              place.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <img
+          src="img/voda/persona-james.png"
+          class="grid-image"
+          alt=" user persona named james"
+        />
+        <img
+          src="img/voda/persona-monica.png"
+          class="grid-image"
+          alt="user persona named monica"
+        />
+        <img
+          src="img/voda/journeyMap-james.png"
+          class="grid-image"
+          alt="a journey map for james"
+        />
+        <img
+          src="img/voda/journeyMap-monica.png"
+          class="grid-image"
+          alt="a journey map for monica"
+        />
+      </div>
+      <br />
+      <div>
+        <h2>Designing For The User</h2>
+        <p class="p-body">
+          After doing a final review of my research, the goals of my design
+          would be to:
+        </p>
+        <div class="center">
+          <ul id="listF">
+            <li>
+              Streamline the presentation of information, so that users are able
+              to easily navigate the application.
+            </li>
+            <li>
+              Provide comprehensive information, so that users do not have to
+              leave my application to fill in knowledge gaps.
+            </li>
+            <li>
+              Give users control over what information the they see, so that the
+              user can own their experience.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <figure>
+            <img
+              src="img/voda/user-flow.png"
+              class="picture"
+              alt="Image that shows the user flow for Voda"
+            /><br />
+            <figcaption class="center">
+              The main user flow of Voda. The goal here is to reduce the number
+              of clicks as much as possible.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <figure>
+              <picture>
+                <source srcset="img/voda/prototype-desktop.png" />
+                <img
+                  src="img/voda/prototype-desktop.png"
+                  class="picture"
+                  alt="image that show the desktop prototype of voda"
+                />
+              </picture>
+              <br /><br />
+              <figcaption class="center">
+                Orginal Voda desktop (left) and mobile (right) wireframes
+                showing the onboarding. Onabording was removed in later
+                interations because it proved to be unneeded.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/voda/prototype-mobile.png" />
+              <img
+                src="img/voda/prototype-mobile.png"
+                class="picture"
+                alt="image that shows the mobile prototype of Voda"
+              />
+            </picture>
+          </div>
+        </div>
+        <h3 class="center">Early Problems and Usability Testing</h3>
+        <p class="p-body">Early iterations of Voda included:</p>
+        <div>
+          <ul id="listG">
+            <li>
+              One information card per screen on mobile to give equal attention
+              to all the information and avoid one set of information getting
+              overlooked simply because it was last on the screen.
+            </li>
+            <li>
+              A pop-up window for the safety information; so that users would
+              focus on the message instead of scrolling past it.
+            </li>
+            <li>
+              A brief text overview of the weather so that if they didn't want
+              to view all the visual information, they had a snapshot.
+            </li>
+          </ul>
+        </div>
+        <p class="p-body">
+          During usability testing, this view was not favorable. Participants
+          found the overview text redundant and would have preferred that the
+          safety information was in its place instead. This layout was also
+          inefficient once I added the 10-day and monthly views. So I was
+          challenged to find another way to provide the necessary information
+          without cluttering the screen and overwhelming the user. I looked
+          through other existing applications and concepts to research different
+          layout structures in order to improve my design.
+        </p>
+        <div class="grid-container wireframes">
+          <figure>
+            <picture>
+              <source srcset="img/voda/midfi-prototype.png" />
+              <img
+                src="img/voda/midfi-prototype.png"
+                class="grid-image wireframes"
+                alt="first mockup of the homepage"
+              />
+            </picture>
+            <figcaption>Mid-fidelity wireframe with original design</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source srcset="img/voda/verision-2.png" />
+              <img
+                src="img/voda/verision-2.png"
+                class="grid-image wireframes"
+                alt="first mock up of the forcast"
+              />
+            </picture>
+            <figcaption>
+              Put all the weather information onto one screen.
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source srcset="img/voda/version-3.png" />
+              <img
+                src="img/voda/version-3.png"
+                class="grid-image wireframes"
+                alt="second mockup of the forecast"
+              />
+            </picture>
+            <figcaption>Added buttons to adjust the timeframe.</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source srcset="img/voda/version-4.png" />
+              <img
+                src="img/voda/version-4.png"
+                class="grid-image wireframes"
+                alt="third mock up of the forecast"
+              />
+            </picture>
+            <figcaption>Added buttons to adjust the timeframe.</figcaption>
+          </figure>
+        </div>
+        <h3 class="center">Tasks</h3>
+        <div class="clist">
+          <ol id="listH">
+            <li>Search for a location.</li>
+            <li>Check either daily, 10-day, or monthly weather.</li>
+            <li>View the radar.</li>
+          </ol>
+        </div>
+        <p class="p-body">
+          For moderated tests, I timed how long it took to complete three of the
+          main tasks because the goal is for users to check the weather in three
+          minutes or less. The total
+          <mark class="orange"
+            ><b> average time for task completion was 43 seconds</b></mark
+          >, so I concluded that the design and user flow met this goal.
+        </p>
+        <div class="container">
+          <img
+            src="img/voda/affinity-map.png"
+            class="picture"
+            alt="An affinity map from usability testing"
+          />
+        </div>
+      </div>
+      <div>
+        <h2>Final Product</h2>
+        <div>
+          <p class="p-body">
+            After completing the final iteration, I conducted a usability test
+            for feedback. Participants liked the weather icons, the overall look
+            of the application, and the information provided, most notably the
+            algae reporting. Participants also commented on how easy the app was
+            to navigate; there were no mentions of people being confused or
+            frustrated by the flow. I completed a
+            <mark class="orange"><b>minor update in January</b></mark> to
+            <mark class="orange"
+              ><b>combine the wind speed and direction sections</b></mark
+            >. I also
+            <mark class="orange"><b>added a water temperature section</b></mark>
+            because the research participants mentioned swimming the most.
+          </p>
+        </div>
+        <br />
+        <div class="grid-container wireframes">
+          <figure>
+            <picture>
+              <source srcset="img/voda/homepage-sidebar-loggedIn.png" />
+              <img
+                src="img/voda/homepage-sidebar-loggedIn.png"
+                class="grid-image wireframes"
+                alt="a mockup of the final homepage"
+              />
+            </picture>
+            <figcaption>A clean menu, easy-to-navigate menu.</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source srcset="img/voda/forecast-daily.png" />
+              <img
+                src="img/voda/forecast-daily.png"
+                class="grid-image wireframes"
+                alt="a mockup of forecast the daily"
+              />
+            </picture>
+            <figcaption>
+              All information on on screen for easy viewing.
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source srcset="img/voda/algae-report.png" />
+              <img
+                src="img/voda/algae-report.png"
+                class="grid-image wireframes"
+                alt="a mockup of the algae report"
+              />
+            </picture>
+            <figcaption>Algae reports for users to increase safety.</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source srcset="img/voda/settings.png" />
+              <img
+                src="img/voda/settings.png"
+                class="grid-image wireframes"
+                alt="a mockup of the user settings"
+              />
+            </picture>
+            <figcaption>
+              Easily toggle sections on and off, so you see only what you want
+              to.
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <div class="center">
+            <a
+              href="https://www.figma.com/file/8NtlywPos0ib0tIG7EpGiz/voda-final-screens?node-id=0%3A1&t=XuIEDcwOoRV7ENSB-1"
+              class="prototype-button"
+              target="_blank"
+              >Click to View Full Prototype</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="center">
+          If you would like to discuss an oppurtunity, don't hesitate to reach
+          out! You can also view my Linkedin
+          <a
+            href="https://www.linkedin.com/in/alyssamars/"
+            class="link"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+        <div>
+          <a href="mailto:alyssa.mars@proton.me" class="button contact"
+            >Email me here!</a
+          >
+        </div>
+        <br />
+        <br />
+        <div>
+          <!--<div class="social">
                         <a href="https://www.linkedin.com/in/alyssamars/" target="_blank">
                             <svg height="40px" width="40px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
                                 <g stroke-width="0"></g>
@@ -322,11 +582,15 @@
                             </svg>
                         </a>
                     </div>-->
-                </div>
-                <p>Site built by me <mark class="heart">&hearts;</mark></p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+        <p>Site built by me <mark class="heart">&hearts;</mark></p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

@@ -1,134 +1,209 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@200;300;400&display=swap" rel="stylesheet" />
-        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-        <script src="https://kit.fontawesome.com/6a11c53c34.js" crossorigin="anonymous"></script>
-        <title>AM UX Design</title>
-    </head>
-    <body>
-        <header>
-            <div id="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <img src="img/portfolio-logo-image-only.png" class="logo" alt="Logo Image" /> <!--Logo-->
-                    <nav class>
-                        <ul id="nav">
-                            <li><a href="about.html">About Me</a></li> <!--About Me-->
-                            <li><a href="#contact" onclick="menuToggle()">Contact Me</a></li><!--Will take viewer directly to footer-->
-                            <li>
-                                <a href="https://docs.google.com/document/d/1ah0mfzn5v0yRFs8_3bOkqleL-h7HvubnC_UFKjJw1C0/edit?usp=sharing" target="_blank" class="button resume">Resume</a><!--Viewer can look at my resume-->
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a><!--Head will turn into a sidebar menu from a top bar-->
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <script
+      src="https://kit.fontawesome.com/6a11c53c34.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>AM UX Design</title>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img
+            src="img/portfolio-logo-image-only.png"
+            class="logo"
+            alt="logo image a a sun"
+          />
+          <!--Logo-->
+          <nav class>
+            <ul id="nav">
+              <li><a href="about.html">About Me</a></li>
+              <!--About Me-->
+              <li><a href="#contact" onclick="menuToggle()">Contact Me</a></li>
+              <!--Will take viewer directly to footer-->
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1ah0mfzn5v0yRFs8_3bOkqleL-h7HvubnC_UFKjJw1C0/edit?usp=sharing"
+                  target="_blank"
+                  class="button resume"
+                  >Resume</a
+                ><!--Viewer can look at my resume-->
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i></a
+                ><!--Head will turn into a sidebar menu from a top bar-->
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Go to Top
+        </button>
+        <!--Back to Top button-->
+      </div>
+      <div id="hero">
+        <div class="container">
+          <div id="span">
+            <h1>Hi, I'm Alyssa!</h1>
+          </div>
+          <p class="center">
+            I have a passion for <strong>solving problems</strong> and
+            <strong>elevating user experiences</strong>.<br />
+            I enjoy creating <strong>clear and engaging content</strong> that
+            make products <strong>accessible</strong> and
+            <strong>enjoyable</strong> for everyone.
+          </p>
+        </div>
+      </div>
+      <div id="work">
+        <div class="container">
+          <h2 id="MyWork">My Work</h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+              <picture>
+                <source srcset="img/voda/thumbnail-voda.png" />
+                <img
+                  src="img/voda/thumbnail-voda.png"
+                  alt="Image that shows mobile screens for a project called Voda Weather"
+                />
+              </picture>
             </div>
-        </header>
-        <main>
-            <div> 
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button> <!--Back to Top button-->
-            </div>
-            <div id="hero">
-                <div class="container">
-                    <span id="span">
-                        <h1>Hi, I'm Alyssa!</h1>
-                    </span>
-                    <p class="center">
-                        I have a passion for <strong>solving problems</strong> and <strong>elevating user experiences</strong>. <br />
-                        I enjoy creating <strong>clear and engaging content</strong> that make products <strong>accessible</strong> and <strong>enjoyable</strong> for everyone.
-                    </p>
-                </div>
-            </div>
-            <div id="work">
-                <div class="container">
-                    <h2 id="My Work">My Work</h2>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-7">
-                            <picture>
-                                <source srcset="Portfolio Site/img/voda" />
-                                <img src="img/voda/thumbnail-voda.png" alt="Image Voda" />
-                            </picture>
-                        </div>
-                        <div class="col-md-6 col-lg-5">
-                            <h3>Voda Weather</h3>
-                            <p>
-                                Voda is a responsive web weather application for water sports enthusiasts. <br />
-                                <br />
-                                <b>Duration:</b> March - November 2022 (UI update done in January 2023) <br />
-                                <b>Platform:</b> Web <br />
-                                <b>Tools Used:</b> Figma, Optimal Workshop, UsabilityHub, Proto.io <br />
-                                <b>Work Done:</b> Competitive Analysis, User Surverying, User Interview, User Personas, Wireframing, User Flows, Prototyping, A/B Testing, Usability Testing
-                            </p>
-                            <a href="voda.html" class="button index">View Project</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-7">
-                            <picture>
-                                <source srcset="Portfolio Site/img/wayfarer" />
-                                <img src="img/wayfarer/thumbnail-wayfarer.png" id="wayfarerfloat" alt="Image MSD" />
-                            </picture>
-                        </div>
-                        <div class="col-md-6 col-lg-5">
-                            <h3>Wayfarer</h3>
-                            <p>
-                                I was challenged to design an application that focuses on providing jet-setters and backpackers guides and tips for the world's most beautiful destinations. <br />
-                                <br />
-                                <b>Duration:</b> 10 Hours, January 2022 <br />
-                                <b>Platform:</b> iOS <br />
-                                <b>Tools Used:</b> Figma<br />
-                                <b>Work Done:</b> Competitive Analysis, Wireframing, Prototyping
-                            </p>
-                            <a href="https://wayfarer-cs.notion.site/Wayfarer-a-design-challenge-541e961ff8244dedbdc32ae7a91d2316" class="button index" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-7">
-                            <picture>
-                                <source srcset="Portfolia Site/img/msd" />
-                                <img src="img/msd/msd-login.png" id="msdfloat" alt="Image MSD" />
-                            </picture>
-                        </div>
-                        <div class="col-md-6 col-lg-5">
-                            <h3>Redesign: Saint Louis MSD</h3>
-                            <p>
-                                The Metropolitan St. Louis Sewer District billing portal takes a lot of time to navigate mainly due to its bloated and misleading navigation. The redesign will improve user flows, streamline navigation, and update the styling to match the rest of the MSD website.
-                                <br><br><b>Current Stage</b>: Competitor Analysis
-                            </p>
-                            <a href="" class="button soon">Coming Soon!</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-        </main>
-        <footer id="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p class="center">
-                    If you would like to discuss an oppurtunity, don't hesitate to reach out! You can also view my Linkedin <a href="https://www.linkedin.com/in/alyssamars/" class="link" target="_blank">here</a>.
-                </p>
-                <div>
-                    <a href="mailto:alyssa.mars@proton.me" class="button contact">Email me here!</a>
-                </div>
+            <div class="col-md-6 col-lg-5">
+              <h3>Voda Weather</h3>
+              <p>
+                Voda is a responsive web weather application for water sports
+                enthusiasts. <br />
                 <br />
+                <b>Duration:</b> March - November 2022 (UI update done in
+                January 2023) <br />
+                <b>Platform:</b> Web <br />
+                <b>Tools Used:</b> Figma, Optimal Workshop, UsabilityHub,
+                Proto.io <br />
+                <b>Work Done:</b> Competitive Analysis, User Surverying, User
+                Interview, User Personas, Wireframing, User Flows, Prototyping,
+                A/B Testing, Usability Testing
+              </p>
+              <a href="voda.html" class="button index">View Project</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+              <picture>
+                <source srcset="img/wayfarer/thumbnail-wayfarer.png" />
+                <img
+                  src="img/wayfarer/thumbnail-wayfarer.png"
+                  id="wayfarerfloat"
+                  alt="Image that shows screen for a project called Wayfarer"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <h3>Wayfarer</h3>
+              <p>
+                I was challenged to design an application that focuses on
+                providing jet-setters and backpackers guides and tips for the
+                world's most beautiful destinations. <br />
                 <br />
-                <div>
-                    <!--<div class="social">
+                <b>Duration:</b> 10 Hours, January 2022 <br />
+                <b>Platform:</b> iOS <br />
+                <b>Tools Used:</b> Figma<br />
+                <b>Work Done:</b> Competitive Analysis, Wireframing, Prototyping
+              </p>
+              <a
+                href="https://wayfarer-cs.notion.site/Wayfarer-a-design-challenge-541e961ff8244dedbdc32ae7a91d2316"
+                class="button index"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+              <picture>
+                <source srcset="img/msd/msd-login.png" />
+                <img
+                  src="img/msd/msd-login.png"
+                  id="msdfloat"
+                  alt="Image that shows a login page for a billing portal"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <h3>Redesign: Saint Louis MSD</h3>
+              <p>
+                The Metropolitan St. Louis Sewer District billing portal takes a
+                lot of time to navigate mainly due to its bloated and misleading
+                navigation. The redesign will improve user flows, streamline
+                navigation, and update the styling to match the rest of the MSD
+                website.
+                <br /><br /><b>Current Stage</b>: Competitor Analysis
+              </p>
+              <a href="" class="button soon">Coming Soon!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="center">
+          If you would like to discuss an oppurtunity, don't hesitate to reach
+          out! You can also view my Linkedin
+          <a
+            href="https://www.linkedin.com/in/alyssamars/"
+            class="link"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+        <div>
+          <a href="mailto:alyssa.mars@proton.me" class="button contact"
+            >Email me here!</a
+          >
+        </div>
+        <br />
+        <br />
+        <div>
+          <!--<div class="social">
                         <a href="https://www.linkedin.com/in/alyssamars/" target="_blank">
                             <svg height="40px" width="40px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
                                 <g stroke-width="0"></g>
@@ -171,11 +246,15 @@
                             </svg>
                         </a>
                     </div>-->
-                </div>
-                <p>Site built by me <mark class="heart">&hearts;</mark></p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+        <p>Site built by me <mark class="heart">&hearts;</mark></p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
