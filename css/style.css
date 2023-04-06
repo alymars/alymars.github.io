@@ -432,6 +432,13 @@ footer ul li {
 .link {
     color:#94A8FF !important;
 }
+.link.text {
+    color:#222 !important;
+    text-decoration: underline;
+}
+.link.text:hover {
+    color: #ffe570 !important;
+}
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
